@@ -8,13 +8,193 @@
     <link rel="stylesheet" href="css/app.min.css">
   </head>
   <body>
-    <header class="header"></header>
+    <div class="main__bg"></div>
     <main class="main">
-      <p>Море</p><img src="images/dest/sea.webp">
-      <script src="js/app.min.js"></script>
+      <section class="sidemenu">
+        <aside class="sidemenu__workspaces">
+          <div class="sidemenu__control">
+            <div class="sidemenu__control-close sidemenu__control-btn"></div>
+            <div class="sidemenu__control-min sidemenu__control-btn"></div>
+            <div class="sidemenu__control-max sidemenu__control-btn"></div>
+          </div>
+          <div class="container workspaces">
+            <div class="workspaces__item"><img src="images/dest/workspace-1.webp"></div>
+            <div class="workspaces__item"><img src="images/dest/workspace-2.webp"></div>
+            <div class="workspaces__item"><img src="images/dest/workspace-3.webp"></div>
+            <div class="workspaces__item"><img src="images/dest/workspace-4.webp"></div>
+            <div class="workspaces__item"><img src="images/dest/workspace-add.webp"></div>
+          </div>
+        </aside>
+        <div class="sidemenu__main">
+          <h3 class="sidemenu__title">Explore</h3>
+          <nav class="sidemenu__nav nav">
+            <div class="nav__item is-active">
+                  <svg class="icon icon-sidemenu-nav-compas nav__item-icon">
+                    <use xlink:href="images/dest/sprite.svg#sidemenu-nav-compas"></use>
+                  </svg><a class="nav__item-link" href="#">Home</a>
+            </div>
+            <div class="nav__item">
+                  <svg class="icon icon-sidemenu-nav-music nav__item-icon">
+                    <use xlink:href="images/dest/sprite.svg#sidemenu-nav-music"></use>
+                  </svg><a class="nav__item-link" href="#">Music</a>
+            </div>
+            <div class="nav__item">
+                  <svg class="icon icon-sidemenu-nav-gaming nav__item-icon">
+                    <use xlink:href="images/dest/sprite.svg#sidemenu-nav-gaming"></use>
+                  </svg><a class="nav__item-link" href="#">Gaming</a>
+            </div>
+            <div class="nav__item">
+                  <svg class="icon icon-sidemenu-nav-world nav__item-icon">
+                    <use xlink:href="images/dest/sprite.svg#sidemenu-nav-world"></use>
+                  </svg><a class="nav__item-link" href="#">Science & Tech</a>
+            </div>
+            <div class="nav__item">
+                  <svg class="icon icon-sidemenu-nav-book nav__item-icon">
+                    <use xlink:href="images/dest/sprite.svg#sidemenu-nav-book"></use>
+                  </svg><a class="nav__item-link" href="#">Education</a>
+            </div>
+            <div class="nav__item">
+                  <svg class="icon icon-sidemenu-nav-play nav__item-icon">
+                    <use xlink:href="images/dest/sprite.svg#sidemenu-nav-play"></use>
+                  </svg><a class="nav__item-link" href="#">Entertainment</a>
+            </div>
+            <div class="nav__item">
+                  <svg class="icon icon-sidemenu-nav-hub nav__item-icon">
+                    <use xlink:href="images/dest/sprite.svg#sidemenu-nav-hub"></use>
+                  </svg><a class="nav__item-link" href="#">Student Hubs</a>
+            </div>
+          </nav>
+        </div>
+        <div class="actionmenu sidemenu__actionmenu">
+          <div class="actionmenu-soundtrack is-active">
+                <svg class="icon icon-actionmenu-soundtrack-bg actionmenu-soundtrack-bg">
+                  <use xlink:href="images/dest/sprite.svg#actionmenu-soundtrack-bg"></use>
+                </svg>
+          </div>
+          <div class="actionmenu-content">
+            <div class="actionmenu__namespace"><img class="actionmenu__avatar" src="images/dest/activemenu-avatar.png"><span class="actionmenu__name">Sophie</span></div>
+            <div class="actionmenu__voicebutton"></div>
+            <div class="actionmenu__headphones">
+                  <svg class="icon icon-actionmenu-headphones actionmenu__headphones-icon">
+                    <use xlink:href="images/dest/sprite.svg#actionmenu-headphones"></use>
+                  </svg>
+            </div>
+            <div class="actionmenu__invite">
+                  <svg class="icon icon-actionmenu-invite actionmenu__invite-icon">
+                    <use xlink:href="images/dest/sprite.svg#actionmenu-invite"></use>
+                  </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mainsection">
+        <div class="mainsection__searchbar">
+          <input class="mainsection__searchbar-input" type="text" placeholder="">
+        </div>
+        <div class="mainsection__banner"><span class="mainsection__banner-content">Find your community on Daccord</span></div>
+        <div class="mainsection__row">
+          <div class="mainsection__row-header"><span class="mainsection__row-title">Featured Community</span><a class="mainsection__row-link" href="#">See all</a></div>
+          <div class="mainsection__row-item">
+            <div class="mainsection__item mainsection__item-big">
+              <div class="container">
+                <div class="mainsection__item-content">
+                  <div class="mainsection__item-logo"></div>
+                  <h4 class="mainsection__item-title">VR</h4>
+                  <p class="mainsection__item-text">Great place to hang out and meet new fans. Always sharong the newest info, </p>
+                  <div class="mainsection__item-footer">
+                    <div class="mainsection__item-online">109,789 Online</div>
+                    <div class="mainsection__item-members">109,789 Members</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mainsection__item mainsection__item-big">
+              <div class="container">
+                <div class="mainsection__item-content">
+                  <div class="mainsection__item-logo"></div>
+                  <h4 class="mainsection__item-title">Game Play</h4>
+                  <p class="mainsection__item-text">Great place to hang out and meet new fans. Always sharong the newest info,</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mainsection__row">
+          <div class="mainsection__row-header"><span class="mainsection__row-title">Popular right now</span><a class="mainsection__row-link" href="#">See all</a></div>
+          <div class="mainsection__row-item">
+            <div class="mainsection__item mainsection__item-medium">
+              <div class="mainsection__item-content">
+                <div class="mainsection__item-bg"></div>
+                <div class="mainsection__item-logo"></div>
+                <h4 class="mainsection__item-title">3D Art</h4>
+                <p class="mainsection__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo ut ac risus eleifend.</p>
+                <div class="mainsection__item-footer">
+                  <div class="mainsection__item-online">1,709,789 Members</div>
+                </div>
+              </div>
+            </div>
+            <div class="mainsection__item mainsection__item-medium">
+              <div class="mainsection__item-content">
+                <div class="mainsection__item-bg"></div>
+                <div class="mainsection__item-logo"></div>
+                <h4 class="mainsection__item-title">Gem</h4>
+                <p class="mainsection__item-text">Great place to hang out and meet new fans. Always sharong the newest info,</p>
+                <div class="mainsection__item-footer">
+                  <div class="mainsection__item-online">1,239,787 Members</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mainsection__row">
+          <div class="mainsection__row-header"><span class="mainsection__row-title">Recent Add</span><a class="mainsection__row-link" href="#">See all</a></div>
+          <div class="mainsection__row-item"></div>
+        </div>
+      </section>
+      <section class="inspector">
+        <div class="inspector__actiontop">
+          <div class="inspector__actiontop-item inspector__actiontop-mail">
+                <svg class="icon icon-actiontop-mail inspector__actiontop-icon">
+                  <use xlink:href="images/dest/sprite.svg#actiontop-mail"></use>
+                </svg>
+          </div>
+          <div class="inspector__actiontop-item inspector__actiontop-bell">
+                <svg class="icon icon-actiontop-bell inspector__actiontop-icon">
+                  <use xlink:href="images/dest/sprite.svg#actiontop-bell"></use>
+                </svg>
+          </div>
+          <div class="inspector__actiontop-item inspector__actiontop-chat">
+                <svg class="icon icon-actiontop-chat inspector__actiontop-icon">
+                  <use xlink:href="images/dest/sprite.svg#actiontop-chat"></use>
+                </svg>
+          </div>
+          <div class="inspector__actiontop-item inspector__actiontop-setting">
+                <svg class="icon icon-actiontop-setting inspector__actiontop-icon">
+                  <use xlink:href="images/dest/sprite.svg#actiontop-setting"></use>
+                </svg>
+          </div>
+        </div>
+        <div class="inspector__namespace">
+          <div class="inspector__namespace-avatar"><img class="inspector__namespace-img" src="images/dest/inspector-namespace-avatar.png"></div><span class="inspector__namespace-fullname">Sophie Fortune</span><span class="inspector__namespace-username">@sophiefortune</span>
+        </div>
+        <div class="inspector__memberlist">
+          <div class="inspector__memberlist-header"><span class="inspector__memberlist-title">New Members</span><a class="inspector__memberlist-link" href="#">See all</a></div>
+          <div class="inspector__memberlist-items">
+            <div class="inspector__memberlist-item"><img class="inspector__memberlist-avatar" src="images/dest/inspector-memberlist-1.png"><span class="inspector__memberlist-name">Anne Couture</span><span class="inspector__memberlist-lasttime">3 min ago</span></div>
+            <div class="inspector__memberlist-item"><img class="inspector__memberlist-avatar" src="images/dest/inspector-memberlist-2.png"><span class="inspector__memberlist-name">Miriam Soleil</span><span class="inspector__memberlist-lasttime">20 min ago</span></div>
+            <div class="inspector__memberlist-item"><img class="inspector__memberlist-avatar" src="images/dest/inspector-memberlist-3.png"><span class="inspector__memberlist-name">Marie Laval</span><span class="inspector__memberlist-lasttime">35 min ago</span></div>
+            <div class="inspector__memberlist-item"><img class="inspector__memberlist-avatar" src="images/dest/inspector-memberlist-4.png"><span class="inspector__memberlist-name">Mark  Morain</span><span class="inspector__memberlist-lasttime">40 min ago</span></div>
+          </div>
+        </div>
+        <div class="inspector__follow">
+          <div class="inspector__follow-title">Follow me</div>
+          <div class="inspector__follow-items">
+            <div class="inspector__follow-item"><img class="inspector__follow-logo" src="images/dest/inspector-follow-instagram.png"><a class="inspector__follow-link" href="#">@aksondesign</a></div>
+            <div class="inspector__follow-item"><img class="inspector__follow-logo" src="images/dest/inspector-follow-twitter.png"><a class="inspector__follow-link" href="#">@aksonvady</a></div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-      <p>(c)Copyright 2015-2023</p>
-    </footer>
+    <script src="js/app.min.js"></script>
   </body>
 </html>

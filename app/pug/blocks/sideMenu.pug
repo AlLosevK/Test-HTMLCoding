@@ -1,0 +1,55 @@
+section.sidemenu
+  aside.sidemenu__workspaces
+    .sidemenu__control
+      .sidemenu__control-close.sidemenu__control-btn
+      .sidemenu__control-min.sidemenu__control-btn
+      .sidemenu__control-max.sidemenu__control-btn
+    .container.workspaces
+      .workspaces__item
+        img(src='images/dest/workspace-1.webp')
+      .workspaces__item
+        img(src='images/dest/workspace-2.webp')
+      .workspaces__item
+        img(src='images/dest/workspace-3.webp')
+      .workspaces__item
+        img(src='images/dest/workspace-4.webp')
+      .workspaces__item
+        img(src='images/dest/workspace-add.webp')
+  .sidemenu__main
+    h3.sidemenu__title Explore
+    nav.sidemenu__nav.nav
+      .nav__item.is-active
+        +icon('sidemenu-nav-compas', 'nav__item-icon')
+        a.nav__item-link(href="#") Home
+      .nav__item
+        +icon('sidemenu-nav-music', 'nav__item-icon')
+        a.nav__item-link(href="#") Music
+      .nav__item
+        +icon('sidemenu-nav-gaming', 'nav__item-icon')
+        a.nav__item-link(href="#") Gaming
+      .nav__item
+        +icon('sidemenu-nav-world', 'nav__item-icon')
+        a.nav__item-link(href="#") Science & Tech
+      .nav__item
+        +icon('sidemenu-nav-book', 'nav__item-icon')
+        a.nav__item-link(href="#") Education
+      .nav__item
+        +icon('sidemenu-nav-play', 'nav__item-icon')
+        a.nav__item-link(href="#") Entertainment
+      .nav__item
+        +icon('sidemenu-nav-hub', 'nav__item-icon')
+        a.nav__item-link(href="#") Student Hubs
+  .actionmenu.sidemenu__actionmenu
+    .actionmenu-soundtrack.is-active
+      +icon('actionmenu-soundtrack-bg', 'actionmenu-soundtrack-bg')
+      //- svg.icon.icon-actionmenu-soundtrack-bg.actionmenu-soundtrack-bg
+      //-   use(xlink:href="images/dest/icons/actionmenu-soundtrack-bg.svg")
+    .actionmenu-content
+      .actionmenu__namespace
+        img.actionmenu__avatar(src="images/dest/activemenu-avatar.png")
+        span.actionmenu__name Sophie
+      .actionmenu__voicebutton
+      .actionmenu__headphones
+        +icon('actionmenu-headphones', 'actionmenu__headphones-icon')
+      .actionmenu__invite
+        +icon('actionmenu-invite', 'actionmenu__invite-icon')

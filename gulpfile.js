@@ -78,7 +78,8 @@ function scripts() {
 }
 
 function styles() {
-	return src(['node_modules/bootstrap/dist/css/bootstrap.min.css',
+	return src([
+		// 'node_modules/bootstrap/dist/css/bootstrap.min.css',
 		'app/' + preprocessor + '/main.' + preprocessor + '']) // Выбираем источник: "app/sass/main.sass" или "app/less/main.less"
 	.pipe(eval(preprocessor)()) // Преобразуем значение переменной "preprocessor" в функцию
 	.pipe(concat('app.min.css')) // Конкатенируем в файл app.min.js
@@ -127,7 +128,7 @@ function svgsprite() {
 		// remove all fill, style and stroke declarations in out shapes
 		.pipe(cheerio({
 			run: function ($) {
-				// $('[fill]').removeAttr('fill');
+				$('[fill]').attr('fill','currentColor');
 				// $('[stroke]').removeAttr('stroke');
 				// $('[style]').removeAttr('style');
 			},

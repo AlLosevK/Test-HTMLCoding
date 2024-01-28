@@ -1,0 +1,8 @@
+File from: [app/images/src/mainsection-item-big-bg.png]
+
+File to: [app/images/dest/mainsection-item-big-bg.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: /Users/salamander/Documents/work/Test-HTMLCoding/node_modules/pngquant-bin/vendor/pngquant --quality=75-100 -o app/images/dest/mainsection-item-big-bg.png app/images/src/mainsection-item-big-bg.png
+  error: cannot decode image mainsection-item-big-bg.png
