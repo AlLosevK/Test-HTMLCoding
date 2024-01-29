@@ -1,0 +1,7 @@
+File from: [app/images/src/mainsection-item-background.png]
+
+File to: [app/images/dest/mainsection-item-background.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: /Users/salamander/Documents/work/Test-HTMLCoding/node_modules/pngquant-bin/vendor/pngquant --quality=75-100 -o app/images/dest/mainsection-item-background.png app/images/src/mainsection-item-background.png

@@ -135,6 +135,17 @@
       font-size: 10px
       opacity: .6
     &-big
+      &:nth-child(1)
+        .container
+          background-image: url('../images/dest/mainsection-item-background.png')
+      &:nth-child(2)
+        .mainsection__item
+          &-logo
+            background-image: url('../images/dest/mainsection-item-logo-gamepad-new.png')
+            background-size: 100% 100%
+            width: 63px
+            &::after
+              left: -128px
       .container
         padding: 14px 12px
         width: 100%
@@ -205,6 +216,18 @@
     &-medium
       max-height: 152px
       min-height: 152px
+      &:nth-child(1)
+        .mainsection__item
+          &-logo
+            background-image: url('../images/dest/mainsection-item-logo-3d.png')
+            width: 60px
+            height: 60px
+      &:nth-child(2)
+        .mainsection__item
+          &-logo
+            background-image: url('../images/dest/mainsection-item-logo-gem.png')
+            width: 60px
+            height: 60px
       &::after
         content: ''
         position: absolute
