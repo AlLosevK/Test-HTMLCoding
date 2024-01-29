@@ -11,9 +11,9 @@
     max-width: 76px
     padding-left: 8px
     // background-color: rgba(56, 58, 87, 0.50)
-    background-image: url('../images/dest/icons/sidemenu-sidebar-bg.svg')
-    background-size: 76px 844px
-    background-position: 0 0
+    background-image: url('../images/dest/icons/sidemenu-sidebar-bg-new.svg')
+    background-size: 71px 844px
+    background-position: 5px 0
     background-repeat: no-repeat
   &__control
     display: -webkit-flex
@@ -89,13 +89,18 @@
     min-width: 244px
     // background-color: #2C2F4880
     background-color: rgba(44, 47, 72, 0.50)
+    backdrop-filter: blur(30px)
     height: calc(100% - 72px)
+    box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1) inset
   &__title
     font-size: 20px
     font-weight: 900
     color: #fff
     padding: 8px 16px
+    padding-bottom: 11.5px
     border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+    box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.1) inset
+
 
 .workspaces
   // background-color: rgba(29, 32, 62, .3)
@@ -110,10 +115,22 @@
   flex-direction: column
   justify-content: flex-start
   align-items: center
+  &::after
+    content: ''
+    position: absolute
+    top: 62%
+    left: -12%
+    width: 72px
+    height: 72px
+    z-index: -1
+    background-image: url('../images/dest/icons/sidemenu-sidebar-bg-activeitem.svg')
   &__item
     width: 40px
     height: 40px
     border-radius: 50%
+    cursor: pointer
+    position: relative
+
 
 
 .nav
@@ -152,20 +169,20 @@
   background-color: #1D203E
   color: #fff
   padding: 24px 24px 16px 16px
+  box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1) inset
   &-soundtrack
     position: absolute
-    top: -75px
+    top: -135px
     left: 0
     width: 320px
     height: 91px
     display: none
-    // width: 360px
-    // height: 170px
-    // background-color: rgba(0, 0, 0, .5)
-    // background-image: url('../images/dest/actionmenu-soundtrack-bg.png')
-    // background-size: 100% 100%
-    // background-position: 00% 00%
-    // background-repeat: no-repeat
+    width: 360px
+    height: 170px
+    background-image: url('../images/dest/actionmenu-soundtrack-bg.png')
+    background-size: 100% 100%
+    background-position: 00% 00%
+    background-repeat: no-repeat
     &.is-active
       display: block
     &-bg

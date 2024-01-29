@@ -1,0 +1,14 @@
+File from: [app/images/src/mainsection-item-medium-1.png]
+
+File to: [app/images/dest/mainsection-item-medium-1.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: /Users/salamander/Documents/work/Test-HTMLCoding/node_modules/pngquant-bin/vendor/pngquant --quality=75-100 -o app/images/dest/mainsection-item-medium-1.png app/images/src/mainsection-item-medium-1.png
+File from: [app/images/src/mainsection-item-medium-2.png]
+
+File to: [app/images/dest/mainsection-item-medium-2.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: /Users/salamander/Documents/work/Test-HTMLCoding/node_modules/pngquant-bin/vendor/pngquant --quality=75-100 -o app/images/dest/mainsection-item-medium-2.png app/images/src/mainsection-item-medium-2.png

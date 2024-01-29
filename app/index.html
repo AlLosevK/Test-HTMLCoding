@@ -6,6 +6,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
   </head>
   <body>
     <div class="main__bg"></div>
@@ -21,7 +22,7 @@
             <div class="workspaces__item"><img src="images/dest/workspace-1.webp"></div>
             <div class="workspaces__item"><img src="images/dest/workspace-2.webp"></div>
             <div class="workspaces__item"><img src="images/dest/workspace-3.webp"></div>
-            <div class="workspaces__item"><img src="images/dest/workspace-4.webp"></div>
+            <div class="workspaces__item is-active"><img src="images/dest/workspace-4.webp"></div>
             <div class="workspaces__item"><img src="images/dest/workspace-add.webp"></div>
           </div>
         </aside>
@@ -66,11 +67,7 @@
           </nav>
         </div>
         <div class="actionmenu sidemenu__actionmenu">
-          <div class="actionmenu-soundtrack is-active">
-                <svg class="icon icon-actionmenu-soundtrack-bg actionmenu-soundtrack-bg">
-                  <use xlink:href="images/dest/sprite.svg#actionmenu-soundtrack-bg"></use>
-                </svg>
-          </div>
+          <div class="actionmenu-soundtrack is-active"></div>
           <div class="actionmenu-content">
             <div class="actionmenu__namespace"><img class="actionmenu__avatar" src="images/dest/activemenu-avatar.png"><span class="actionmenu__name">Sophie</span></div>
             <div class="actionmenu__voicebutton"></div>
@@ -89,7 +86,8 @@
       </section>
       <section class="mainsection">
         <div class="mainsection__searchbar">
-          <input class="mainsection__searchbar-input" type="text" placeholder="">
+          <input class="mainsection__searchbar-input" type="text" placeholder="Explore">
+          <div class="mainsection__searchbar-placeholder"><i class="fa fa-search"></i><span>Explore</span></div>
         </div>
         <div class="mainsection__banner"><span class="mainsection__banner-content">Find your community on Daccord</span></div>
         <div class="mainsection__row">
@@ -148,7 +146,23 @@
         </div>
         <div class="mainsection__row">
           <div class="mainsection__row-header"><span class="mainsection__row-title">Recent Add</span><a class="mainsection__row-link" href="#">See all</a></div>
-          <div class="mainsection__row-item"></div>
+          <div class="mainsection__row-item">
+            <div class="mainsection__item mainsection__item-small">
+              <div class="mainsection__item-content"><span class="mainsection__item-title">Game</span>
+                <p class="mainsection__item-text">Great place to hang out and meet new fans. Always sharong the newest info, </p>
+              </div>
+            </div>
+            <div class="mainsection__item mainsection__item-small">
+              <div class="mainsection__item-content"><span class="mainsection__item-title">Game</span>
+                <p class="mainsection__item-text">Great place to hang out and meet new fans. Always sharong the newest info, </p>
+              </div>
+            </div>
+            <div class="mainsection__item mainsection__item-small">
+              <div class="mainsection__item-content"><span class="mainsection__item-title">Game</span>
+                <p class="mainsection__item-text">Great place to hang out and meet new fans. Always sharong the newest info, </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="inspector">

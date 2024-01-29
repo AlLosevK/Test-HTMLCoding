@@ -1,13 +1,15 @@
 .mainsection
   min-width: 716px
-  // min-height: 844px
-  // max-height: 844px
+  max-width: 716px
+  background-color: rgba(29, 32, 62, 1)
+  border-left: 1px solid rgba(0,0,0,.1)
   &__searchbar
     padding: 10px 0
     margin-bottom: 24px
     position: relative
     background-color: #2C2F48
-    filter: drop-shadow(0px -1px 0px rgba(255, 255, 255, 0.10))
+    border-bottom: 1px solid rgba(0,0,0,.1)
+    box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.1) inset
     &-input
       min-width: 442px
       margin: 0 auto
@@ -18,14 +20,23 @@
       border-radius: 4px
       display: block
       color: #fff
-    &::after
-      content: 'Explore'
+      position: relative
+      &::placeholder
+        text-align: center
+      &::-webkit-input-placeholder
+        text-align: center
+      &:-moz-placeholder
+        text-align: center
+      &::-moz-placeholder
+        text-align: center
+      &:-ms-input-placeholder
+        text-align: center
+    &-placeholder
       position: absolute
-      top: 30%
-      left: 47%
-      font-size: 12px
-      color: #fff
-      opacity: .2
+      top: 31.5%
+      left: 45.3%
+      font-size: 13px
+      color: rgba(235,235,245,.6)
   &__banner
     min-width: calc(100% - 48px)
     border-radius: 20px
@@ -87,17 +98,8 @@
     position: relative
     overflow: hidden
     background: linear-gradient(135deg, rgba(58,208,219,1) 0%, rgba(120,44,150,1) 100%)
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5)
     &-content
-      // border-radius: 20px
-      // width: 100%
-      // min-height: 198px
-      // background-color: #2C2F48
-      // background-image: url('../images/dest/mainsection-item-gamepad.png')
-      // background-repeat: no-repeat
-      // background-size: 100% 100%
-      // overflow: hidden
-      // z-index: 150
-      // position: relative
     &-logo
       width: 55px
       height: 60px
@@ -108,7 +110,7 @@
       position: relative
       z-index: 150
     &-title
-      margin-bottom: 8px
+      // margin-bottom: 8px
       position: relative
       z-index: 150
       font-size: 20px
@@ -203,6 +205,19 @@
     &-medium
       max-height: 152px
       min-height: 152px
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 132px
+        height: 152px
+        background-image: url('../images/src/mainsection-item-medium-1.png')
+        background-size: 100% 100%
+        background-repeat: no-repeat
+      &:nth-child(2)
+        &::after
+          background-image: url('../images/src/mainsection-item-medium-2.png')
       .mainsection__item
         &-bg
           position: absolute
@@ -238,3 +253,56 @@
           margin: 0
           z-index: 150
           position: relative
+    &-small
+      width: 200px
+      height: 200px
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      align-items: stretch
+      background-image: url('../images/dest/mainsection-item-small.png')
+      background-size: 200px 190px
+      background-position: 0% 10px
+      background-repeat: no-repeat
+      &:nth-child(2)
+        margin: 0 6px
+      &.mainsection__item
+        z-index: auto
+        &-content
+          padding: 17px 12px
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: stretch
+          gap: 8px
+        &:after
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 200px
+          height: 200px
+          background-image: url('../images/src/mainsection-item-small-1.png')
+          background-size: 100% 100%
+          background-repeat: no-repeat
+          z-index: -1
+        &:nth-child(2)
+          &:after
+            background-image: url('../images/src/mainsection-item-small-2.png')
+        &:nth-child(3)
+          &:after
+            background-image: url('../images/src/mainsection-item-small-3.png')
+      .mainsection__item
+        &-content
+          padding: 17px 12px
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: stretch
+          gap: 8px
