@@ -68,7 +68,7 @@
       display: flex
       flex-direction: row
       justify-content: space-between
-      align-items: center
+      align-items: flex-start
       flex-wrap: nowrap
       gap: 28px
     &-header
@@ -83,6 +83,8 @@
     &-title
       font-size: 24px
       color: #fff
+      font-family: "SF Compact"
+      font-weight: 600
     &-link
       font-size: 16px
       color: #fff
@@ -114,6 +116,8 @@
       position: relative
       z-index: 150
       font-size: 20px
+      font-family: 'SF Compact'
+      font-weight: 600
     &-text
       margin: 0
       margin-bottom: 8px
@@ -136,7 +140,10 @@
       opacity: .6
     &-big
       &:nth-child(1)
+        min-height: 220px
         .container
+          min-height: 218px
+          padding-bottom: 23px
           background-image: url('../images/dest/mainsection-item-background.png')
       &:nth-child(2)
         .mainsection__item
@@ -144,8 +151,15 @@
             background-image: url('../images/dest/mainsection-item-logo-gamepad-new.png')
             background-size: 100% 100%
             width: 63px
+            height: 63px
+            margin-bottom: -4px
             &::after
               left: -128px
+        .container
+          &:after
+            top: 60px
+            left: -1.5px
+            clip-path: path("M183.713 11.215 168 2.144a16 16 0 0 0-16 0l-15.713 9.071a16 16 0 0 0-8 13.857v6.05c-22.777-2.085-46.784-5.928-67.792-9.891-28.753-5.424-43.13-8.136-51.812-.938C0 27.491 0 41.644 0 69.95V138h320V69.95c0-28.306 0-42.459-8.683-49.657s-23.059-4.486-51.812.938c-21.008 3.963-45.015 7.806-67.792 9.891v-6.05a16 16 0 0 0-8-13.857m4 20.256v-6.4a12 12 0 0 0-6-10.391L166 5.608a12 12 0 0 0-12 0l-15.713 9.072a12 12 0 0 0-6 10.392v6.4c9.613.795 18.959 1.256 27.713 1.256s18.1-.46 27.713-1.257")
       .container
         padding: 14px 12px
         width: 100%
@@ -165,6 +179,17 @@
         flex-direction: row
         justify-content: flex-end
         align-items: stretch
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          top: 44px
+          left: 0
+          min-width: 100%
+          min-height: 100%
+          z-index: 149
+          clip-path: path("M183.713 12.072 168 3a16 16 0 0 0-16 0l-15.713 9.072a16 16 0 0 0-8 13.856v12.824c-23.634-1.755-48.593-5.045-70.151-8.385-27.58-4.274-41.37-6.41-49.753.773C0 38.324 0 51.91 0 79.078V178h320V79.078c0-27.17 0-40.754-8.383-47.938s-22.172-5.047-49.753-.773c-21.558 3.34-46.517 6.63-70.151 8.385V25.928a16 16 0 0 0-8-13.856m4 26.963V25.928a12 12 0 0 0-6-10.392L166 6.464a12 12 0 0 0-12 0l-15.713 9.072a12 12 0 0 0-6 10.392v13.107c9.613.646 18.959 1.02 27.713 1.02s18.1-.374 27.713-1.02")
+          backdrop-filter: blur(30px)
       .mainsection__item
         &-bg
           position: absolute
@@ -187,18 +212,18 @@
         &-logo
           margin: 0 auto
           position: relative
-          z-index: auto
-          &::after
-            content: ''
-            position: absolute
-            bottom: -115px
-            left: -132px
-            width: 320px
-            min-height: 180px
-            background-size: 100% 100%
-            background-repeat: no-repeat
-            z-index: -1
-            background-image: url('../images/dest/mainsection-item-big-bg.png')
+          z-index: 150
+          // &::after
+          //   content: ''
+          //   position: absolute
+          //   bottom: -115px
+          //   left: -132px
+          //   width: 320px
+          //   min-height: 180px
+          //   background-size: 100% 100%
+          //   background-repeat: no-repeat
+          //   z-index: -1
+          //   background-image: url('../images/dest/mainsection-item-big-bg.png')
         &-title
           margin-bottom: 8px
         &-text
